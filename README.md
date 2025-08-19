@@ -1,6 +1,6 @@
 # MetaKeep Transaction Signing App
 
-A minimal Android app demonstrating how to use the MetaKeep SDK for signing EVM transactions.
+Android app demonstrating how to use the MetaKeep SDK for signing EVM transactions.
 
 ## Setup
 
