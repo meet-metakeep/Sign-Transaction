@@ -1,0 +1,11 @@
+initscript {
+}
+allprojects {
+	gradle.startParameter
+}
+rootProject {
+	tasks.register('wrapper', Wrapper) {
+		gradleVersion = '7.6.1'
+		distributionType = Wrapper.DistributionType.ALL
+	}
+}

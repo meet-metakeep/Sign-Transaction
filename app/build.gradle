@@ -1,0 +1,30 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+
+android {
+	compileSdkVersion 33
+	namespace 'com.domain.app'
+
+	defaultConfig {
+		applicationId "com.domain.app"
+		minSdkVersion 26
+		targetSdkVersion 33
+
+		manifestPlaceholders = [metakeepDomain: "a071e2fe-54b8-41f2-8082-137e2073085e.auth.metakeep.xyz", metakeepScheme: "com.domain.app"]
+	}
+
+	compileOptions {
+		sourceCompatibility JavaVersion.VERSION_1_8
+		targetCompatibility JavaVersion.VERSION_1_8
+	}
+
+	kotlinOptions {
+		jvmTarget = '1.8'
+	}
+}
+
+dependencies {
+	implementation "org.jetbrains.kotlin:kotlin-stdlib:1.8.22"
+	implementation "androidx.appcompat:appcompat:1.6.1"
+	implementation "xyz.metakeep.sdk:lib:2.0.3"
+}
